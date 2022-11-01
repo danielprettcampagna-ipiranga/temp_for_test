@@ -1,0 +1,12 @@
+name: Upload module files to Azure Blob Storage
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
